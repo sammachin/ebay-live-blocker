@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "eBay Live Blocker",
+  "description": "Hides all eBay Live content from the eBay homepage",
+  "version": "1.0",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.ebay.com/*",
+        "*://*.ebay.co.uk/*",
+        "*://*.ebay.com.au/*",
+        "*://*.ebay.at/*",
+        "*://*.ebay.be/*",
+        "*://*.ebay.ca/*",
+        "*://*.ebay.fr/*",
+        "*://*.ebay.de/*",
+        "*://*.ebay.com.hk/*",
+        "*://*.ebay.in/*",
+        "*://*.ebay.ie/*",
+        "*://*.ebay.it/*",
+        "*://*.ebay.com.my/*",
+        "*://*.ebay.nl/*",
+        "*://*.ebay.ph/*",
+        "*://*.ebay.pl/*",
+        "*://*.ebay.com.sg/*",
+        "*://*.ebay.es/*",
+        "*://*.ebay.ch/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
